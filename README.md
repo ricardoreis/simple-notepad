@@ -4,6 +4,17 @@
 
 ![Simple Notepad](notepad.png)
 
+## 📥 Download Rápido
+
+**Quer usar agora? Baixe o executável pronto:**
+
+[![Download Simple Notepad](https://img.shields.io/badge/Download-Simple%20Notepad%20v1.0.0-blue?style=for-the-badge&logo=apple)](https://github.com/ricardoreis/simple-notepad/releases/download/v1.0.0/Simple%20Notepad_1.0.0_aarch64.dmg)
+
+> 💿 **Arquivo DMG** - Compatível com macOS (Apple Silicon M1/M2/M3)  
+> 📁 **Instalação**: Baixe → Abra o DMG → Arraste para Applications → Pronto!
+
+---
+
 ## ✨ Características
 
 - 🎯 **Interface Ultra-Minimalista**: Apenas uma área de texto limpa, sem distrações
@@ -14,7 +25,7 @@
 - ⚡ **Rápido e Leve**: Aplicação nativa construída com Tauri
 - 🎨 **Ícone Personalizado**: Ícone de bloco de notas para fácil identificação
 
-## 🚀 Instalação Rápida
+## 🚀 Instalação para Desenvolvedores
 
 ### Pré-requisitos
 - **Node.js** (versão 14 ou superior)
