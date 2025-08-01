@@ -8,7 +8,7 @@
 
 **Quer usar agora? Baixe o executável pronto:**
 
-[![Download Simple Notepad](https://img.shields.io/badge/Download-Simple%20Notepad%20v1.0.0-blue?style=for-the-badge&logo=apple)](https://github.com/ricardoreis/simple-notepad/releases/download/v1.0.0/Simple%20Notepad_1.0.0_aarch64.dmg)
+[![Download Simple Notepad](https://img.shields.io/badge/Download-Simple%20Notepad%20v1.0.0-blue?style=for-the-badge&logo=apple)](https://github.com/ricardoreis/simple-notepad/releases/download/v1.0.0/Simple.Notepad_1.0.0_aarch64.dmg)
 
 > 💿 **Arquivo DMG** - Compatível com macOS (Apple Silicon M1/M2/M3)  
 > 📁 **Instalação**: Baixe → Abra o DMG → Arraste para Applications → Pronto!
