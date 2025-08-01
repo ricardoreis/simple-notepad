@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Notepad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            height: 100%;
+            font-family: 'Courier New', Courier, monospace;
+            background: #ffffff;
+        }
+        
+        #notepad {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            outline: none;
+            resize: none;
+            padding: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.2;
+            background: #ffffff;
+            color: #000000;
+        }
+        
+        #notepad:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="notepad"></textarea>
+    
+    <script>
+        const textarea = document.getElementById('notepad');
+        
+        // Load saved text on startup
+        const savedText = localStorage.getItem('notepadText');
+        if (savedText) {
+            textarea.value = savedText;
+        }
+        
+        // Save text on every change
+        textarea.addEventListener('input', function() {
+            localStorage.setItem('notepadText', this.value);
+        });
+        
+        // Focus on the textarea when the app loads
+        textarea.focus();
+    </script>
+</body>
+</html>
