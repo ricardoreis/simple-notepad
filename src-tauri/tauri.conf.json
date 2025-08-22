@@ -37,8 +37,8 @@
         "fullscreen": false,
         "resizable": true,
         "title": "Simple Notepad",
-        "width": 640,
-        "height": 480,
+        "width": 1024,
+        "height": 768,
         "center": true,
         "minWidth": 300,
         "minHeight": 200

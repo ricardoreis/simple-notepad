@@ -55,6 +55,56 @@
             localStorage.setItem('notepadText', this.value);
         });
         
+        // Handle Tab key to insert 4 spaces
+        textarea.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                
+                const start = this.selectionStart;
+                const end = this.selectionEnd;
+                
+                // Insert 4 spaces at cursor position
+                this.value = this.value.substring(0, start) + '    ' + this.value.substring(end);
+                
+                // Move cursor after the inserted spaces
+                this.selectionStart = this.selectionEnd = start + 4;
+                
+                // Trigger input event to save the change
+                this.dispatchEvent(new Event('input'));
+            }
+            
+            // Handle Home key to go to beginning of current line
+            if (e.key === 'Home') {
+                e.preventDefault();
+                
+                const cursorPos = this.selectionStart;
+                const text = this.value;
+                
+                // Find the start of the current line
+                let lineStart = text.lastIndexOf('\n', cursorPos - 1) + 1;
+                
+                // Move cursor to the beginning of the line
+                this.selectionStart = this.selectionEnd = lineStart;
+            }
+            
+            // Handle End key to go to end of current line
+            if (e.key === 'End') {
+                e.preventDefault();
+                
+                const cursorPos = this.selectionStart;
+                const text = this.value;
+                
+                // Find the end of the current line
+                let lineEnd = text.indexOf('\n', cursorPos);
+                if (lineEnd === -1) {
+                    lineEnd = text.length;
+                }
+                
+                // Move cursor to the end of the line
+                this.selectionStart = this.selectionEnd = lineEnd;
+            }
+        });
+        
         // Focus on the textarea when the app loads
         textarea.focus();
     </script>
